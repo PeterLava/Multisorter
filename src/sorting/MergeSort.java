@@ -1,6 +1,6 @@
 package sorting;
 
-class mergeSort {
+class MergeSort {
 
     public int[] mergeSort(int[] intArray) {
         int[] subArrayOne = new int[intArray.length / 2];
