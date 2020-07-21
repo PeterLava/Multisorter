@@ -13,7 +13,6 @@ public class SelectionSort {
             int temp = a[i];
             a[i] = a[min];
             a[min] = temp;
-        }
-        return a;
+        }return a;
     }
 }

@@ -1,7 +1,6 @@
 package sorting;
 
 class MergeSort {
-
     public int[] mergeSort(int[] intArray) {
         int[] subArrayOne = new int[intArray.length / 2];
         for (int i = 0; i < subArrayOne.length; i++) {
@@ -16,8 +15,7 @@ class MergeSort {
         }
         if (subArrayTwo.length != 1) {
             subArrayTwo = mergeSort(subArrayTwo);
-        }
-        return merge(subArrayOne,subArrayTwo);
+        }return merge(subArrayOne,subArrayTwo);
     }
 
     public static int[] merge(int[] subArrayOne, int[] subArrayTwo) {
@@ -32,7 +30,6 @@ class MergeSort {
                 intArray[i] = subArrayOne[a];
                 a++;
             } else {
-
                 if (subArrayOne[a] < subArrayTwo[b]) {
                     intArray[i] = subArrayOne[a];
                     a++;
@@ -41,9 +38,7 @@ class MergeSort {
                     b++;
                 }
             }
-        }
-        return intArray;
-
+        }return intArray;
     }
 }
 
